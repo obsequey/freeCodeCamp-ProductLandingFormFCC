@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+html {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff8e1;
+}
+body {
+  padding-top: 12rem;
+}
+@media (min-width: 601px) {
+  body {
+    padding-top: 8rem;
+  }
+}
+.nav {
+  position: fixed;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  background-color: #fff8e1;
+  z-index: 20;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 601px) {
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.nav__logo {
+  padding: 1rem;
+  flex: 1;
+}
+@media (min-width: 651px) {
+  .nav__logo {
+    flex: 4;
+  }
+}
+.nav__menu {
+  flex: 1;
+}
+@media (min-width: 651px) {
+  .nav__menu {
+    flex: 3;
+  }
+}
+@media (min-width: 651px) {
+  .nav__menu__list {
+    display: flex;
+  }
+}
+.nav__menu__list__item {
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 651px) {
+  .nav__menu__list__item {
+    margin: 0 1rem 0 0;
+  }
+}
+@media (min-width: 560px) {
+  main {
+    padding: 0 0.5rem;
+  }
+}
+main .news__heading {
+  width: 18rem;
+  margin: 0 auto 1rem auto;
+}
+@media (min-width: 430px) {
+  main .news__heading {
+    width: auto;
+  }
+}
+main .news__form {
+  display: flex;
+  flex-direction: column;
+}
+main .news__form__input-mail {
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 18rem;
+}
+main .news__form__submit-mail {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: 10rem;
+  border: none;
+  background-color: #ffe082;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+}
+main .news__form__submit-mail:hover {
+  background-color: #ffb300;
+}
+main .pluses {
+  margin-bottom: 4rem;
+}
+main .pluses__section {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+}
+main .pluses__section__left {
+  display: none;
+  font-size: 3rem;
+}
+main .pluses__section__left i {
+  color: #ffb300;
+  height: 3rem;
+  margin: auto;
+}
+@media (min-width: 550px) {
+  main .pluses__section__left {
+    display: flex;
+    flex: 1;
+  }
+}
+@media (min-width: 930px) {
+  main .pluses__section__left {
+    max-width: 200px;
+  }
+}
+main .pluses__section__right {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+@media (min-width: 550px) {
+  main .pluses__section__right {
+    text-align: left;
+  }
+}
+main .pluses__section__right__header {
+  margin: 0;
+}
+main .pluses__section__right__body {
+  margin: 0;
+}
+@media (min-width: 550px) and (min-width: 1000px) {
+  main .pluses__section__right {
+    max-width: 800px;
+  }
+}
+main .video {
+  display: flex;
+  margin-bottom: 3rem;
+}
+main .video__main {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 560px) {
+  main .video__main {
+    width: 560px;
+  }
+}
+main .positions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+@media (min-width: 801px) {
+  main .positions {
+    flex-direction: row;
+  }
+}
+main .positions__card {
+  border: 1px solid #000;
+  border-radius: 3px;
+  width: 18rem;
+  margin: 1rem auto;
+}
+@media (min-width: 801px) {
+  main .positions__card {
+    width: 30%;
+  }
+}
+main .positions__card__header {
+  background-color: #ffe082;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: normal;
+}
+main .positions__card__price {
+  padding: 1rem;
+  font-size: 2rem;
+}
+main .positions__card__description__item {
+  margin-bottom: 1rem;
+}
+main .positions__card__btn {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ffe082;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 3px;
+}
+main .positions__card__btn:hover {
+  background-color: #ffb300;
+}
+.footer {
+  background-color: #ffe082;
+  padding: 1rem;
+}
+.footer__information {
+  margin-bottom: 1rem;
+}
+.footer__information__nav {
+  display: flex;
+  justify-content: center;
+}
+.footer__information__nav__item {
+  margin: 0 1rem;
+}
